@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import Axios from "axios";
 import { Jumbotron } from "react-bootstrap";
+import NewQuote from "./components/NewQuote";
 
 function App() {
   const [responseData, setResponseData] = useState("");
@@ -29,11 +30,9 @@ function App() {
 
   return (
     <div className='App'>
-      <div className='title-container'>
-        <div className='title-border'>
-          <h1>Qutoes API</h1>
-        </div>
-      </div>
+      <header className='App-header'>
+        <h1>Qutoes API</h1>
+      </header>
       <br />
       {responseData && (
         <div className='container'>
@@ -51,6 +50,9 @@ function App() {
           </Jumbotron>
         </div>
       )}
+      <br />
+      <br />
+      <NewQuote />
     </div>
   );
 }
