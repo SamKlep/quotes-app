@@ -1,5 +1,39 @@
 .App {
   text-align: center;
+  font-family: 'Red Rose', cursive;
+}
+
+body {
+  background-color: rgba(44, 171, 240, 0.851);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.jumbotron {
+  background-color: aliceblue;
+  max-width: 50%;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 50px;
+  box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green;
+  
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+}
+
+.title-border {
+  background-color: aliceblue;
+  max-width: 70%;
+  margin: 35px;
+  padding: 20px;
+  border-radius: 50px;
+  box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green;
 }
 
 .App-logo {
